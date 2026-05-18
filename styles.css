@@ -1227,9 +1227,14 @@ body {
 
 /* ==================== FOOTER ==================== */
 .footer {
-    background: var(--color-slate-dark);
+    background: #111214; /*var(--color-slate-dark);*/
     color: var(--color-white);
     padding: 60px 40px 0;
+
+    background-image: url(http://localhost/shiventech/assets/images/arrow-side-up-3.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    /* background-size: cover; */
 }
 
 .footer-content {
