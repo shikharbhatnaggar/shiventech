@@ -535,229 +535,646 @@
 
 <!-- INCLUDE SAME NAVBAR HERE -->
 
-<section class="inner-hero">
+<!-- <section class="inner-hero">
     <div class="inner-hero-content">
-        <span class="hero-badge">Infrastructure Consulting</span>
-        <h1>Optimize Infrastructure For Performance & Scalability</h1>
+        <span class="hero-badge">Progressive Web Apps</span>
+        <h1>App-Like Experiences Directly From The Browser</h1>
         <p>
-            Design scalable, secure and efficient infrastructure solutions for modern digital businesses.
+            Deliver fast, engaging and reliable web experiences using modern Progressive Web App technologies.
         </p>
     </div>
-</section>
+</section> -->
 
-<section class="service-detail-section">
+<style>
+    /* =========================
+    BLOG PAGE STYLING
+    ========================= */
+
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
+
+    .container{
+        max-width:900px;
+        margin:auto;
+    }
+
+    /* BLOG SECTION ONLY */
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
+
+    .article-body .container{
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    /* BLOG HERO */
+    .article-body h1{
+        font-size:56px;
+        line-height:1.15;
+        font-weight:800;
+        color:#0f172a;
+        margin-bottom:25px;
+        letter-spacing:-1px;
+    }
+
+    .article-body > .container > p:first-of-type{
+        font-size:21px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:25px;
+    }
+
+    .article-body > .container > p:nth-of-type(2){
+        font-size:18px;
+        color:#64748b;
+        margin-bottom:50px;
+    }
+
+    /* ARTICLE DIVIDER */
+    .article-body hr{
+        border:none;
+        height:1px;
+        background:#e2e8f0;
+        margin:60px 0;
+    }
+
+    /* TREND BLOCKS */
+    .trend-item{
+        background:#ffffff;
+        padding:45px;
+        border-radius:28px;
+        margin-bottom:35px;
+        box-shadow:
+            0 10px 40px rgba(15,23,42,0.05);
+        border:1px solid #edf2f7;
+        transition:0.35s ease;
+    }
+
+    .trend-item:hover{
+        transform:translateY(-6px);
+        box-shadow:
+            0 20px 60px rgba(15,23,42,0.08);
+    }
+
+    .trend-item h2{
+        font-size:34px;
+        line-height:1.3;
+        margin-bottom:22px;
+        color:#0f172a;
+        font-weight:700;
+    }
+
+    .trend-item h3{
+        font-size:22px;
+        margin-top:35px;
+        margin-bottom:18px;
+        color:#111827;
+        font-weight:600;
+    }
+
+    .trend-item p{
+        font-size:18px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:18px;
+    }
+
+    /* LISTS */
+    .trend-item ul{
+        padding-left:22px;
+        margin-bottom:20px;
+    }
+
+    .trend-item ul li{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:10px;
+        position:relative;
+    }
+
+    /* CONCLUSION */
+    .conclusion{
+        background:linear-gradient(135deg,#0f172a,#111827);
+        padding:60px;
+        border-radius:32px;
+        margin-top:80px;
+        color:#ffffff;
+    }
+
+    .conclusion h2{
+        font-size:40px;
+        margin-bottom:25px;
+        color:#ffffff;
+    }
+
+    .conclusion p{
+        font-size:18px;
+        line-height:1.9;
+        color:rgba(255,255,255,0.85);
+        margin-bottom:20px;
+    }
+
+    .conclusion ul{
+        margin:30px 0;
+        padding-left:22px;
+    }
+
+    .conclusion ul li{
+        font-size:18px;
+        line-height:1.9;
+        margin-bottom:10px;
+        color:rgba(255,255,255,0.9);
+    }
+
+    .blog-meta{
+        display:flex;
+        gap:14px;
+        flex-wrap:wrap;
+        align-items:center;
+        color:#64748b;
+        font-size:15px;
+        margin-bottom:40px;
+    }
+
+    .blog-feature-image{
+        margin-bottom:60px;
+    }
+
+    .blog-feature-image img{
+        width:100%;
+        border-radius:28px;
+        display:block;
+        box-shadow:0 20px 60px rgba(0,0,0,0.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:991px){
+
+        .article-body h1{
+            font-size:46px;
+        }
+
+        .trend-item{
+            padding:35px;
+        }
+
+        .trend-item h2{
+            font-size:30px;
+        }
+
+        .conclusion{
+            padding:45px;
+        }
+
+    }
+
+    @media(max-width:767px){
+
+        .article-body{
+            padding:100px 15px 80px;
+        }
+
+        .article-body h1{
+            font-size:36px;
+        }
+
+        .article-body > .container > p:first-of-type{
+            font-size:18px;
+        }
+
+        .trend-item{
+            padding:28px;
+            border-radius:22px;
+        }
+
+        .trend-item h2{
+            font-size:26px;
+        }
+
+        .trend-item h3{
+            font-size:20px;
+        }
+
+        .trend-item p,
+        .trend-item ul li,
+        .conclusion p,
+        .conclusion ul li{
+            font-size:16px;
+        }
+
+        .conclusion{
+            padding:35px 28px;
+        }
+
+        .conclusion h2{
+            font-size:30px;
+        }
+
+    }
+</style>
+<style>
+    /* =========================
+    BLOG FAQ SECTION
+    ========================= */
+
+    .blog-faq-section{
+        margin-top:90px;
+    }
+
+    .blog-faq-section h2{
+        font-size:42px;
+        margin-bottom:40px;
+        color:#0f172a;
+        line-height:1.3;
+    }
+
+    .blog-faq-item{
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:24px;
+        padding:30px 35px;
+        margin-bottom:22px;
+        transition:0.3s ease;
+        box-shadow:0 10px 30px rgba(15,23,42,0.04);
+    }
+
+    .blog-faq-item:hover{
+        transform:translateY(-4px);
+        box-shadow:0 18px 40px rgba(15,23,42,0.08);
+    }
+
+    .blog-faq-item h3{
+        font-size:22px;
+        line-height:1.5;
+        margin-bottom:15px;
+        color:#111827;
+    }
+
+    .blog-faq-item p{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+    }
+
+    /* MOBILE */
+    @media(max-width:767px){
+
+        .blog-faq-section{
+            margin-top:70px;
+        }
+
+        .blog-faq-section h2{
+            font-size:30px;
+        }
+
+        .blog-faq-item{
+            padding:24px;
+            border-radius:20px;
+        }
+
+        .blog-faq-item h3{
+            font-size:19px;
+        }
+
+        .blog-faq-item p{
+            font-size:16px;
+        }
+
+    }
+</style>
+
+
+<section class="article-body">
 
     <div class="container">
 
-        <div class="service-detail-wrapper">
-
-            <!-- LEFT CONTENT -->
-            <div class="service-detail-content">
-
-                <!-- Overview -->
-                <div class="service-block">
-
-                    <span class="section-badge">
-                        Overview
-                    </span>
-
-                    <h2 class="section-title">
-                        Future-Ready Infrastructure Consulting Solutions
-                    </h2>
-
-                    <p class="section-description">
-                        Our infrastructure consulting services help businesses optimize cloud environments, improve performance and ensure reliable operations.
-                    </p>
-
-                </div>
-
-                <!-- Key Features -->
-                <div class="service-block">
-
-                    <h3 class="sub-title">
-                        Key Features
-                    </h3>
-
-                    <div class="features-grid">
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Cloud Infrastructure Planning</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Server & Hosting Optimization</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Scalability & Load Planning</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Security & Monitoring Solutions</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Infrastructure Cost Optimization</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Performance Improvement Strategies</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- CTA BOX -->
-                <div class="service-cta-box">
-
-                    <div class="cta-content">
-
-                        <h3>
-                            Optimize your digital infrastructure for growth and stability.
-                        </h3>
-
-                        <p>
-                            Build scalable and user-focused product strategies.
-                        </p>
-
-                    </div>
-
-                    <div class="cta-action">
-                        <a href="http://localhost/shiventech/contact.html" class="btn btn-primary">
-                            Consult Infrastructure Experts
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="service-detail-image">
-
-                <img src="../assets/images/shiventech-startup-consulting.jpg"
-                     alt="Infrastructure Consulting">
-
-            </div>
-
+        <div class="blog-meta">
+            <span>Home</span>
+            <span>></span>
+            <span>Blogs</span>
+            <span>></span>
+            <span>How AI is Transforming Businesses</span>
         </div>
 
-    </div>
+        <h1>How AI is Transforming Businesses</h1>
 
-</section>
+        <div class="blog-meta">
+            <span>📅 21 May 2026</span>
+            <span>•</span>
+            <span>Artificial Intelligence</span>
+            <span>•</span>
+            <span>8 min read</span>
+        </div>
 
-<!-- FAQ SECTION -->
-<section class="faq-section">
+        <div class="blog-feature-image">
+            <img src="../assets/images/blogs/how-ai-is-transforming-businesses.jpg" alt="Top Web Development Trends in 2026">
+        </div>
 
-    <div class="container">
+        <p>
+            Artificial Intelligence (AI) is transforming the way businesses operate,
+            communicate, and deliver value to customers. From automation and data analysis
+            to customer support and personalized experiences, AI is helping companies
+            improve efficiency, reduce costs, and accelerate growth across industries.
+        </p>
 
-        <!-- SECTION HEADER -->
-        <div class="section-header">
+        <p>
+            Here are the major ways AI is transforming businesses in 2026.
+        </p>
 
-            <span class="section-badge">
-                Frequently Asked Questions
-            </span>
+        <hr />
 
-            <h2 class="section-title">
-                Everything You Need To Know
-            </h2>
+        <div class="trend-item">
 
-            <p class="section-description">
-                Find answers to commonly asked questions about our services,
-                technologies and development process.
+            <h2>1. Automating Repetitive Business Tasks</h2>
+
+            <p>
+                AI-powered automation is helping businesses eliminate repetitive manual work
+                and improve operational efficiency.
+            </p>
+
+            <h3>Common Automation Areas</h3>
+
+            <ul>
+                <li>Email and workflow automation</li>
+                <li>Invoice and document processing</li>
+                <li>Customer support ticket management</li>
+                <li>Appointment scheduling</li>
+                <li>Data entry and reporting</li>
+                <li>Lead qualification systems</li>
+            </ul>
+
+            <p>
+                Automation allows teams to focus more on strategic and creative work
+                rather than repetitive administrative tasks.
             </p>
 
         </div>
 
-        <!-- FAQ WRAPPER -->
-        <div class="faq-wrapper">
+        <div class="trend-item">
 
-            <!-- WEB DEVELOPMENT FAQ -->
-            <div class="faq-category">
+            <h2>2. Enhancing Customer Support with AI Chatbots</h2>
 
-                <h3 class="faq-category-title">
-                    Infrastructure Consulting FAQs
-                </h3>
+            <p>
+                AI chatbots and virtual assistants are becoming essential tools
+                for modern customer support systems.
+            </p>
 
-                <div class="faq-items">
+            <h3>Benefits of AI Chatbots</h3>
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+            <ul>
+                <li>24/7 customer support availability</li>
+                <li>Instant response times</li>
+                <li>Reduced support costs</li>
+                <li>Improved customer satisfaction</li>
+                <li>Multilingual communication</li>
+            </ul>
 
-                        <button class="faq-question">
+            <p>
+                Businesses can now handle thousands of customer interactions
+                efficiently without increasing support teams significantly.
+            </p>
 
-                            <span>
-                                Do you provide cloud infrastructure consulting?
-                            </span>
+        </div>
 
-                            <span class="faq-icon">+</span>
+        <div class="trend-item">
 
-                        </button>
+            <h2>3. Improving Data Analysis and Decision-Making</h2>
 
-                        <div class="faq-answer">
+            <p>
+                AI systems can process massive amounts of business data quickly
+                and provide actionable insights for better decision-making.
+            </p>
 
-                            <p>
-                                Yes, we help businesses plan and optimize cloud-based environments.
-                            </p>
+            <h3>AI Data Analysis Applications</h3>
 
-                        </div>
+            <ul>
+                <li>Sales forecasting</li>
+                <li>Customer behavior analysis</li>
+                <li>Market trend prediction</li>
+                <li>Risk assessment</li>
+                <li>Business intelligence dashboards</li>
+            </ul>
 
-                    </div>
+            <p>
+                Data-driven insights help businesses make faster and smarter
+                strategic decisions.
+            </p>
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+        </div>
 
-                        <button class="faq-question">
+        <div class="trend-item">
 
-                            <span>
-                                Can infrastructure consulting improve performance?
-                            </span>
+            <h2>4. Personalizing Customer Experiences</h2>
 
-                            <span class="faq-icon">+</span>
+            <p>
+                AI enables businesses to deliver personalized experiences
+                based on user preferences and behavior.
+            </p>
 
-                        </button>
+            <h3>Examples of Personalization</h3>
 
-                        <div class="faq-answer">
+            <ul>
+                <li>Product recommendations</li>
+                <li>Personalized email campaigns</li>
+                <li>Customized website experiences</li>
+                <li>Smart content recommendations</li>
+                <li>Targeted advertisements</li>
+            </ul>
 
-                            <p>
-                                Yes, optimized infrastructure enhances speed, reliability and scalability.
-                            </p>
+            <p>
+                Personalized experiences improve customer engagement,
+                retention, and conversion rates.
+            </p>
 
-                        </div>
+        </div>
 
-                    </div>
+        <div class="trend-item">
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+            <h2>5. Accelerating Content Creation</h2>
 
-                        <button class="faq-question">
+            <p>
+                AI-powered tools are helping businesses create content faster
+                for marketing, communication, and branding purposes.
+            </p>
 
-                            <span>
-                                Do you help reduce infrastructure costs?
-                            </span>
+            <h3>AI Content Capabilities</h3>
 
-                            <span class="faq-icon">+</span>
+            <ul>
+                <li>Blog writing assistance</li>
+                <li>Social media content generation</li>
+                <li>Email copywriting</li>
+                <li>Image and video generation</li>
+                <li>SEO content optimization</li>
+            </ul>
 
-                        </button>
+            <p>
+                Businesses can maintain consistent content production
+                while improving marketing efficiency.
+            </p>
 
-                        <div class="faq-answer">
+        </div>
 
-                            <p>
-                                Yes, we recommend cost-efficient and scalable infrastructure solutions.
-                            </p>
+        <div class="trend-item">
 
-                        </div>
+            <h2>6. Strengthening Cybersecurity</h2>
 
-                    </div>
+            <p>
+                AI is playing a major role in identifying threats,
+                detecting suspicious activity, and improving cybersecurity systems.
+            </p>
 
-                </div>
+            <h3>AI Security Applications</h3>
+
+            <ul>
+                <li>Fraud detection systems</li>
+                <li>Real-time threat monitoring</li>
+                <li>Spam and phishing detection</li>
+                <li>Behavioral anomaly analysis</li>
+                <li>Automated security alerts</li>
+            </ul>
+
+            <p>
+                AI-driven security helps businesses protect sensitive data
+                and reduce cybersecurity risks.
+            </p>
+
+        </div>
+
+        <div class="trend-item">
+
+            <h2>7. Optimizing Business Operations</h2>
+
+            <p>
+                AI helps businesses optimize internal processes,
+                resource management, and operational workflows.
+            </p>
+
+            <h3>Operational Improvements</h3>
+
+            <ul>
+                <li>Supply chain optimization</li>
+                <li>Inventory management</li>
+                <li>Demand forecasting</li>
+                <li>Resource allocation</li>
+                <li>Performance monitoring</li>
+            </ul>
+
+            <p>
+                Operational efficiency leads to cost savings,
+                faster delivery, and improved productivity.
+            </p>
+
+        </div>
+
+        <div class="trend-item">
+
+            <h2>8. Transforming Recruitment and HR</h2>
+
+            <p>
+                AI tools are simplifying hiring processes
+                and improving workforce management.
+            </p>
+
+            <h3>AI in Human Resources</h3>
+
+            <ul>
+                <li>Resume screening automation</li>
+                <li>Candidate matching systems</li>
+                <li>Employee performance analysis</li>
+                <li>AI-powered onboarding</li>
+                <li>Workforce analytics</li>
+            </ul>
+
+            <p>
+                HR teams can streamline recruitment processes
+                and improve employee experiences using AI technologies.
+            </p>
+
+        </div>
+
+        <hr />
+
+        <div class="conclusion">
+
+            <h2>Final Thoughts</h2>
+
+            <p>
+                Artificial Intelligence is no longer a future concept —
+                it is already transforming businesses across industries.
+            </p>
+
+            <ul>
+                <li>Business process automation</li>
+                <li>AI-powered customer support</li>
+                <li>Data-driven decision-making</li>
+                <li>Personalized customer experiences</li>
+                <li>Improved operational efficiency</li>
+            </ul>
+
+            <p>
+                Companies that embrace AI technologies early can gain
+                competitive advantages, improve productivity,
+                and create better customer experiences in the evolving digital economy.
+            </p>
+
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="blog-faq-section">
+
+            <h2>FAQs: How AI is Transforming Businesses</h2>
+
+            <div class="blog-faq-item">
+
+                <h3>1. How is AI helping businesses grow?</h3>
+
+                <p>
+                    AI helps businesses grow by automating tasks,
+                    improving customer experiences, analyzing data,
+                    and increasing operational efficiency.
+                </p>
+
+            </div>
+
+            <div class="blog-faq-item">
+
+                <h3>2. Which industries benefit most from AI?</h3>
+
+                <p>
+                    Industries such as healthcare, finance, retail,
+                    manufacturing, education, and customer service
+                    benefit significantly from AI technologies.
+                </p>
+
+            </div>
+
+            <div class="blog-faq-item">
+
+                <h3>3. Is AI replacing human jobs?</h3>
+
+                <p>
+                    AI is mainly automating repetitive tasks and improving productivity.
+                    While some roles may change, AI also creates new opportunities
+                    for skilled professionals and technology experts.
+                </p>
+
+            </div>
+
+            <div class="blog-faq-item">
+
+                <h3>4. Why should businesses adopt AI?</h3>
+
+                <p>
+                    Businesses should adopt AI to improve efficiency,
+                    reduce operational costs, enhance customer engagement,
+                    and stay competitive in the modern digital marketplace.
+                </p>
 
             </div>
 

@@ -535,236 +535,698 @@
 
 <!-- INCLUDE SAME NAVBAR HERE -->
 
-<section class="inner-hero">
+<!-- <section class="inner-hero">
     <div class="inner-hero-content">
-        <span class="hero-badge">Infrastructure Consulting</span>
-        <h1>Optimize Infrastructure For Performance & Scalability</h1>
+        <span class="hero-badge">Progressive Web Apps</span>
+        <h1>App-Like Experiences Directly From The Browser</h1>
         <p>
-            Design scalable, secure and efficient infrastructure solutions for modern digital businesses.
+            Deliver fast, engaging and reliable web experiences using modern Progressive Web App technologies.
         </p>
     </div>
-</section>
+</section> -->
 
-<section class="service-detail-section">
+<style>
+    /* =========================
+    BLOG PAGE STYLING
+    ========================= */
 
-    <div class="container">
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
 
-        <div class="service-detail-wrapper">
+    .container{
+        max-width:900px;
+        margin:auto;
+    }
 
-            <!-- LEFT CONTENT -->
-            <div class="service-detail-content">
+    /* BLOG SECTION ONLY */
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
 
-                <!-- Overview -->
-                <div class="service-block">
+    .article-body .container{
+        max-width:900px;
+        margin:0 auto;
+    }
 
-                    <span class="section-badge">
-                        Overview
-                    </span>
+    /* BLOG HERO */
+    .article-body h1{
+        font-size:56px;
+        line-height:1.15;
+        font-weight:800;
+        color:#0f172a;
+        margin-bottom:25px;
+        letter-spacing:-1px;
+    }
 
-                    <h2 class="section-title">
-                        Future-Ready Infrastructure Consulting Solutions
-                    </h2>
+    .article-body > .container > p:first-of-type{
+        font-size:21px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:25px;
+    }
 
-                    <p class="section-description">
-                        Our infrastructure consulting services help businesses optimize cloud environments, improve performance and ensure reliable operations.
-                    </p>
+    .article-body > .container > p:nth-of-type(2){
+        font-size:18px;
+        color:#64748b;
+        margin-bottom:50px;
+    }
 
-                </div>
+    /* ARTICLE DIVIDER */
+    .article-body hr{
+        border:none;
+        height:1px;
+        background:#e2e8f0;
+        margin:60px 0;
+    }
 
-                <!-- Key Features -->
-                <div class="service-block">
+    /* TREND BLOCKS */
+    .trend-item{
+        background:#ffffff;
+        padding:45px;
+        border-radius:28px;
+        margin-bottom:35px;
+        box-shadow:
+            0 10px 40px rgba(15,23,42,0.05);
+        border:1px solid #edf2f7;
+        transition:0.35s ease;
+    }
 
-                    <h3 class="sub-title">
-                        Key Features
-                    </h3>
+    .trend-item:hover{
+        transform:translateY(-6px);
+        box-shadow:
+            0 20px 60px rgba(15,23,42,0.08);
+    }
 
-                    <div class="features-grid">
+    .trend-item h2{
+        font-size:34px;
+        line-height:1.3;
+        margin-bottom:22px;
+        color:#0f172a;
+        font-weight:700;
+    }
 
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Cloud Infrastructure Planning</span>
-                        </div>
+    .trend-item h3{
+        font-size:22px;
+        margin-top:35px;
+        margin-bottom:18px;
+        color:#111827;
+        font-weight:600;
+    }
 
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Server & Hosting Optimization</span>
-                        </div>
+    .trend-item p{
+        font-size:18px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:18px;
+    }
 
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Scalability & Load Planning</span>
-                        </div>
+    /* LISTS */
+    .trend-item ul{
+        padding-left:22px;
+        margin-bottom:20px;
+    }
 
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Security & Monitoring Solutions</span>
-                        </div>
+    .trend-item ul li{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:10px;
+        position:relative;
+    }
 
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Infrastructure Cost Optimization</span>
-                        </div>
+    /* CONCLUSION */
+    .conclusion{
+        background:linear-gradient(135deg,#0f172a,#111827);
+        padding:60px;
+        border-radius:32px;
+        margin-top:80px;
+        color:#ffffff;
+    }
 
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Performance Improvement Strategies</span>
-                        </div>
+    .conclusion h2{
+        font-size:40px;
+        margin-bottom:25px;
+        color:#ffffff;
+    }
 
-                    </div>
+    .conclusion p{
+        font-size:18px;
+        line-height:1.9;
+        color:rgba(255,255,255,0.85);
+        margin-bottom:20px;
+    }
 
-                </div>
+    .conclusion ul{
+        margin:30px 0;
+        padding-left:22px;
+    }
 
-                <!-- CTA BOX -->
-                <div class="service-cta-box">
+    .conclusion ul li{
+        font-size:18px;
+        line-height:1.9;
+        margin-bottom:10px;
+        color:rgba(255,255,255,0.9);
+    }
 
-                    <div class="cta-content">
+    .blog-meta{
+        display:flex;
+        gap:14px;
+        flex-wrap:wrap;
+        align-items:center;
+        color:#64748b;
+        font-size:15px;
+        margin-bottom:40px;
+    }
 
-                        <h3>
-                            Optimize your digital infrastructure for growth and stability.
-                        </h3>
+    .blog-feature-image{
+        margin-bottom:60px;
+    }
 
-                        <p>
-                            Build scalable and user-focused product strategies.
-                        </p>
+    .blog-feature-image img{
+        width:100%;
+        border-radius:28px;
+        display:block;
+        box-shadow:0 20px 60px rgba(0,0,0,0.08);
+    }
 
-                    </div>
+    /* RESPONSIVE */
 
-                    <div class="cta-action">
-                        <a href="http://localhost/shiventech/contact.html" class="btn btn-primary">
-                            Consult Infrastructure Experts
-                        </a>
-                    </div>
+    @media(max-width:991px){
 
-                </div>
+        .article-body h1{
+            font-size:46px;
+        }
 
-            </div>
+        .trend-item{
+            padding:35px;
+        }
 
-            <!-- RIGHT IMAGE -->
-            <div class="service-detail-image">
+        .trend-item h2{
+            font-size:30px;
+        }
 
-                <img src="../assets/images/shiventech-startup-consulting.jpg"
-                     alt="Infrastructure Consulting">
+        .conclusion{
+            padding:45px;
+        }
 
-            </div>
+    }
 
-        </div>
+    @media(max-width:767px){
 
+        .article-body{
+            padding:100px 15px 80px;
+        }
+
+        .article-body h1{
+            font-size:36px;
+        }
+
+        .article-body > .container > p:first-of-type{
+            font-size:18px;
+        }
+
+        .trend-item{
+            padding:28px;
+            border-radius:22px;
+        }
+
+        .trend-item h2{
+            font-size:26px;
+        }
+
+        .trend-item h3{
+            font-size:20px;
+        }
+
+        .trend-item p,
+        .trend-item ul li,
+        .conclusion p,
+        .conclusion ul li{
+            font-size:16px;
+        }
+
+        .conclusion{
+            padding:35px 28px;
+        }
+
+        .conclusion h2{
+            font-size:30px;
+        }
+
+    }
+</style>
+<style>
+    /* =========================
+    BLOG FAQ SECTION
+    ========================= */
+
+    .blog-faq-section{
+        margin-top:90px;
+    }
+
+    .blog-faq-section h2{
+        font-size:42px;
+        margin-bottom:40px;
+        color:#0f172a;
+        line-height:1.3;
+    }
+
+    .blog-faq-item{
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:24px;
+        padding:30px 35px;
+        margin-bottom:22px;
+        transition:0.3s ease;
+        box-shadow:0 10px 30px rgba(15,23,42,0.04);
+    }
+
+    .blog-faq-item:hover{
+        transform:translateY(-4px);
+        box-shadow:0 18px 40px rgba(15,23,42,0.08);
+    }
+
+    .blog-faq-item h3{
+        font-size:22px;
+        line-height:1.5;
+        margin-bottom:15px;
+        color:#111827;
+    }
+
+    .blog-faq-item p{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+    }
+
+    /* MOBILE */
+    @media(max-width:767px){
+
+        .blog-faq-section{
+            margin-top:70px;
+        }
+
+        .blog-faq-section h2{
+            font-size:30px;
+        }
+
+        .blog-faq-item{
+            padding:24px;
+            border-radius:20px;
+        }
+
+        .blog-faq-item h3{
+            font-size:19px;
+        }
+
+        .blog-faq-item p{
+            font-size:16px;
+        }
+
+    }
+</style>
+<section class="article-body">
+  <div class="container">
+    <h1>Top Web Development Trends in 2026</h1>
+
+    <div class="blog-meta">
+        <span>📅 7 May 2026</span>
+        <span>•</span>
+        <span>Web Development</span>
+        <span>•</span>
+        <span>8 min read</span>
     </div>
 
-</section>
+    <div class="blog-feature-image">
+        <img src="assets/images/blogs/social-media-marketing-strategies.jpg" alt="Top Web Development Trends in 2026">
+    </div>
 
-<!-- FAQ SECTION -->
-<section class="faq-section">
+    <p>
+      The web development landscape in 2026 is being shaped by AI,
+      performance-first experiences, intelligent automation, and highly
+      interactive user interfaces. Businesses are increasingly investing in
+      scalable, secure, and user-centric web applications that deliver faster
+      experiences across devices.
+    </p>
 
-    <div class="container">
+    <p>
+      Here are the top web development trends defining 2026.
+    </p>
 
-        <!-- SECTION HEADER -->
-        <div class="section-header">
+    <hr />
 
-            <span class="section-badge">
-                Frequently Asked Questions
-            </span>
+    <div class="trend-item">
+      <h2>1. AI-Powered Web Experiences</h2>
 
-            <h2 class="section-title">
-                Everything You Need To Know
-            </h2>
+      <p>
+        Artificial Intelligence is no longer just an add-on feature. Modern
+        websites and applications now integrate AI directly into the user
+        experience.
+      </p>
 
-            <p class="section-description">
-                Find answers to commonly asked questions about our services,
-                technologies and development process.
+      <h3>Key Applications</h3>
+      <ul>
+        <li>AI chat assistants and customer support</li>
+        <li>Personalized content recommendations</li>
+        <li>AI-generated content and summaries</li>
+        <li>Smart search experiences</li>
+        <li>Predictive user behavior analysis</li>
+        <li>AI coding assistants for developers</li>
+      </ul>
+
+      <h3>Why It Matters</h3>
+      <p>
+        AI helps businesses improve engagement, automate workflows, and provide
+        highly personalized digital experiences.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>2. Progressive Web Apps (PWAs)</h2>
+
+      <p>
+        Progressive Web Apps continue to grow because they combine the best
+        features of websites and mobile apps.
+      </p>
+
+      <h3>Benefits of PWAs</h3>
+      <ul>
+        <li>Offline accessibility</li>
+        <li>Faster loading speed</li>
+        <li>Push notifications</li>
+        <li>App-like user experience</li>
+        <li>Lower development cost compared to native apps</li>
+      </ul>
+
+      <p>
+        PWAs are especially valuable for startups and eCommerce platforms
+        looking to reach users across multiple devices efficiently.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>3. Serverless Architecture</h2>
+
+      <p>
+        Serverless computing is becoming a standard approach for scalable web
+        applications.
+      </p>
+
+      <h3>Popular Advantages</h3>
+      <ul>
+        <li>Reduced infrastructure management</li>
+        <li>Automatic scaling</li>
+        <li>Faster deployment cycles</li>
+        <li>Cost optimization</li>
+        <li>Better development productivity</li>
+      </ul>
+
+      <p>
+        Developers can focus more on building features instead of managing
+        servers.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>4. Headless CMS Adoption</h2>
+
+      <p>
+        Headless CMS platforms are transforming content management by separating
+        the frontend from the backend.
+      </p>
+
+      <h3>Why Businesses Prefer Headless CMS</h3>
+      <ul>
+        <li>Omnichannel content delivery</li>
+        <li>Greater frontend flexibility</li>
+        <li>Faster websites</li>
+        <li>Easier API integrations</li>
+        <li>Better scalability</li>
+      </ul>
+
+      <p>
+        This approach works well with modern frontend frameworks like React,
+        Vue, and Next.js.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>5. Motion UI and Interactive Interfaces</h2>
+
+      <p>
+        Modern users expect websites to feel dynamic and interactive.
+      </p>
+
+      <h3>Trending UI Features</h3>
+      <ul>
+        <li>Micro-interactions</li>
+        <li>Scroll-based animations</li>
+        <li>Interactive storytelling</li>
+        <li>3D visuals</li>
+        <li>Smooth transitions</li>
+        <li>Gesture-based interactions</li>
+      </ul>
+
+      <p>
+        These features improve engagement and create memorable user experiences.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>6. Voice Search Optimization</h2>
+
+      <p>
+        Voice-enabled devices are influencing how websites are designed and
+        optimized.
+      </p>
+
+      <h3>Development Focus Areas</h3>
+      <ul>
+        <li>Conversational interfaces</li>
+        <li>Natural language optimization</li>
+        <li>Faster response times</li>
+        <li>Structured data implementation</li>
+        <li>Accessibility improvements</li>
+      </ul>
+
+      <p>
+        Businesses optimizing for voice search gain better visibility and
+        usability.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>7. API-First Development</h2>
+
+      <p>
+        API-first architecture is helping teams build scalable and connected
+        digital ecosystems.
+      </p>
+
+      <h3>Advantages</h3>
+      <ul>
+        <li>Faster integrations</li>
+        <li>Easier mobile and third-party connectivity</li>
+        <li>Better scalability</li>
+        <li>Improved developer collaboration</li>
+        <li>Future-ready architecture</li>
+      </ul>
+
+      <p>
+        This trend is particularly important for SaaS platforms and enterprise
+        applications.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>8. Cybersecurity-First Development</h2>
+
+      <p>
+        With increasing cyber threats, security is becoming a core part of web
+        development rather than an afterthought.
+      </p>
+
+      <h3>Security Priorities in 2026</h3>
+      <ul>
+        <li>Zero-trust architecture</li>
+        <li>Multi-factor authentication</li>
+        <li>Secure API management</li>
+        <li>Real-time threat monitoring</li>
+        <li>Data privacy compliance</li>
+      </ul>
+
+      <p>
+        Secure development practices build user trust and protect business
+        operations.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>9. Low-Code and No-Code Integration</h2>
+
+      <p>
+        Businesses are accelerating digital transformation through low-code and
+        no-code solutions.
+      </p>
+
+      <h3>Common Use Cases</h3>
+      <ul>
+        <li>Internal business tools</li>
+        <li>Workflow automation</li>
+        <li>Rapid MVP development</li>
+        <li>CRM integrations</li>
+        <li>Process management dashboards</li>
+      </ul>
+
+      <p>
+        Professional developers are increasingly combining custom development
+        with no-code platforms for faster delivery.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>10. Sustainable and Green Web Development</h2>
+
+      <p>
+        Performance optimization is now linked with sustainability.
+      </p>
+
+      <h3>Green Development Practices</h3>
+      <ul>
+        <li>Lightweight frameworks</li>
+        <li>Optimized media delivery</li>
+        <li>Efficient hosting infrastructure</li>
+        <li>Reduced server requests</li>
+        <li>Better caching strategies</li>
+      </ul>
+
+      <p>
+        Faster websites not only improve SEO and UX but also reduce energy
+        consumption.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>11. WebAssembly (Wasm) Expansion</h2>
+
+      <p>
+        WebAssembly is enabling near-native performance inside browsers.
+      </p>
+
+      <h3>Emerging Use Cases</h3>
+      <ul>
+        <li>Browser-based video editing</li>
+        <li>Online gaming</li>
+        <li>Complex dashboards</li>
+        <li>CAD applications</li>
+        <li>AI processing in the browser</li>
+      </ul>
+
+      <p>
+        This trend allows developers to create high-performance applications
+        directly on the web.
+      </p>
+    </div>
+
+    <div class="trend-item">
+      <h2>12. Real-Time Web Applications</h2>
+
+      <p>
+        Users increasingly expect instant updates and live experiences.
+      </p>
+
+      <h3>Examples</h3>
+      <ul>
+        <li>Real-time collaboration tools</li>
+        <li>Live chat systems</li>
+        <li>Multiplayer applications</li>
+        <li>Financial dashboards</li>
+        <li>Live analytics platforms</li>
+      </ul>
+
+      <p>
+        Technologies like WebSockets and event-driven systems are powering
+        these experiences.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="conclusion">
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Web development in 2026 is focused on creating:
+      </p>
+
+      <ul>
+        <li>Faster experiences</li>
+        <li>AI-enhanced interactions</li>
+        <li>Secure digital platforms</li>
+        <li>Highly scalable architectures</li>
+        <li>Immersive user interfaces</li>
+      </ul>
+
+      <p>
+        Businesses that adopt these trends early can improve customer
+        engagement, operational efficiency, and long-term scalability.
+      </p>
+
+      <p>
+        Whether you're building a startup MVP, enterprise platform, SaaS
+        product, or eCommerce solution, staying aligned with modern web
+        development trends is essential for future growth.
+      </p>
+    </div>
+    
+  </div>
+    <br>
+    <!-- FAQ SECTION -->
+    <div class="container blog-faq-section">
+
+        <h2>FAQs: Web Development Trends in 2026</h2>
+
+        <div class="blog-faq-item">
+            <h3>1. What is the current trend in web development?</h3>
+            <p>
+                The current trend in web development is the high use of serverless architecture,
+                AI-driven design, and interactive user experiences that focus on speed,
+                personalization, and scalability.
             </p>
-
         </div>
 
-        <!-- FAQ WRAPPER -->
-        <div class="faq-wrapper">
+        <div class="blog-faq-item">
+            <h3>2. What is the future of web development?</h3>
+            <p>
+                The future of web development lies in the increased use of Artificial Intelligence,
+                machine learning, automation, and immersive user experiences. These technologies
+                help developers create smarter, faster, and more responsive applications.
+            </p>
+        </div>
 
-            <!-- WEB DEVELOPMENT FAQ -->
-            <div class="faq-category">
+        <div class="blog-faq-item">
+            <h3>3. Is AI replacing web developers?</h3>
+            <p>
+                No. AI is designed to assist developers by improving productivity,
+                automating repetitive tasks, and streamlining development processes.
+                Human creativity, strategy, and problem-solving remain essential.
+            </p>
+        </div>
 
-                <h3 class="faq-category-title">
-                    Infrastructure Consulting FAQs
-                </h3>
-
-                <div class="faq-items">
-
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
-
-                        <button class="faq-question">
-
-                            <span>
-                                Do you provide cloud infrastructure consulting?
-                            </span>
-
-                            <span class="faq-icon">+</span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                Yes, we help businesses plan and optimize cloud-based environments.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
-
-                        <button class="faq-question">
-
-                            <span>
-                                Can infrastructure consulting improve performance?
-                            </span>
-
-                            <span class="faq-icon">+</span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                Yes, optimized infrastructure enhances speed, reliability and scalability.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
-
-                        <button class="faq-question">
-
-                            <span>
-                                Do you help reduce infrastructure costs?
-                            </span>
-
-                            <span class="faq-icon">+</span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                Yes, we recommend cost-efficient and scalable infrastructure solutions.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+        <div class="blog-faq-item">
+            <h3>4. Is web development a good career in 2026?</h3>
+            <p>
+                Yes, web development continues to be a strong and rewarding career path.
+                The growing demand for websites, SaaS platforms, AI tools, and digital
+                products across industries is increasing the need for skilled developers.
+            </p>
         </div>
 
     </div>
-
+    
 </section>
 
 <!-- INCLUDE SAME FOOTER HERE -->
