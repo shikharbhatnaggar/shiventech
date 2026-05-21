@@ -535,229 +535,624 @@
 
 <!-- INCLUDE SAME NAVBAR HERE -->
 
-<section class="inner-hero">
+<!-- <section class="inner-hero">
     <div class="inner-hero-content">
-        <span class="hero-badge">Infrastructure Consulting</span>
-        <h1>Optimize Infrastructure For Performance & Scalability</h1>
+        <span class="hero-badge">Progressive Web Apps</span>
+        <h1>App-Like Experiences Directly From The Browser</h1>
         <p>
-            Design scalable, secure and efficient infrastructure solutions for modern digital businesses.
+            Deliver fast, engaging and reliable web experiences using modern Progressive Web App technologies.
         </p>
     </div>
-</section>
+</section> -->
 
-<section class="service-detail-section">
+<style>
+    /* =========================
+    BLOG PAGE STYLING
+    ========================= */
+
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
+
+    .container{
+        max-width:900px;
+        margin:auto;
+    }
+
+    /* BLOG SECTION ONLY */
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
+
+    .article-body .container{
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    /* BLOG HERO */
+    .article-body h1{
+        font-size:56px;
+        line-height:1.15;
+        font-weight:800;
+        color:#0f172a;
+        margin-bottom:25px;
+        letter-spacing:-1px;
+    }
+
+    .article-body > .container > p:first-of-type{
+        font-size:21px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:25px;
+    }
+
+    .article-body > .container > p:nth-of-type(2){
+        font-size:18px;
+        color:#64748b;
+        margin-bottom:50px;
+    }
+
+    /* ARTICLE DIVIDER */
+    .article-body hr{
+        border:none;
+        height:1px;
+        background:#e2e8f0;
+        margin:60px 0;
+    }
+
+    /* TREND BLOCKS */
+    .trend-item{
+        background:#ffffff;
+        padding:45px;
+        border-radius:28px;
+        margin-bottom:35px;
+        box-shadow:
+            0 10px 40px rgba(15,23,42,0.05);
+        border:1px solid #edf2f7;
+        transition:0.35s ease;
+    }
+
+    .trend-item:hover{
+        transform:translateY(-6px);
+        box-shadow:
+            0 20px 60px rgba(15,23,42,0.08);
+    }
+
+    .trend-item h2{
+        font-size:34px;
+        line-height:1.3;
+        margin-bottom:22px;
+        color:#0f172a;
+        font-weight:700;
+    }
+
+    .trend-item h3{
+        font-size:22px;
+        margin-top:35px;
+        margin-bottom:18px;
+        color:#111827;
+        font-weight:600;
+    }
+
+    .trend-item p{
+        font-size:18px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:18px;
+    }
+
+    /* LISTS */
+    .trend-item ul{
+        padding-left:22px;
+        margin-bottom:20px;
+    }
+
+    .trend-item ul li{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:10px;
+        position:relative;
+    }
+
+    /* CONCLUSION */
+    .conclusion{
+        background:linear-gradient(135deg,#0f172a,#111827);
+        padding:60px;
+        border-radius:32px;
+        margin-top:80px;
+        color:#ffffff;
+    }
+
+    .conclusion h2{
+        font-size:40px;
+        margin-bottom:25px;
+        color:#ffffff;
+    }
+
+    .conclusion p{
+        font-size:18px;
+        line-height:1.9;
+        color:rgba(255,255,255,0.85);
+        margin-bottom:20px;
+    }
+
+    .conclusion ul{
+        margin:30px 0;
+        padding-left:22px;
+    }
+
+    .conclusion ul li{
+        font-size:18px;
+        line-height:1.9;
+        margin-bottom:10px;
+        color:rgba(255,255,255,0.9);
+    }
+
+    .blog-meta{
+        display:flex;
+        gap:14px;
+        flex-wrap:wrap;
+        align-items:center;
+        color:#64748b;
+        font-size:15px;
+        margin-bottom:40px;
+    }
+
+    .blog-feature-image{
+        margin-bottom:60px;
+    }
+
+    .blog-feature-image img{
+        width:100%;
+        border-radius:28px;
+        display:block;
+        box-shadow:0 20px 60px rgba(0,0,0,0.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:991px){
+
+        .article-body h1{
+            font-size:46px;
+        }
+
+        .trend-item{
+            padding:35px;
+        }
+
+        .trend-item h2{
+            font-size:30px;
+        }
+
+        .conclusion{
+            padding:45px;
+        }
+
+    }
+
+    @media(max-width:767px){
+
+        .article-body{
+            padding:100px 15px 80px;
+        }
+
+        .article-body h1{
+            font-size:36px;
+        }
+
+        .article-body > .container > p:first-of-type{
+            font-size:18px;
+        }
+
+        .trend-item{
+            padding:28px;
+            border-radius:22px;
+        }
+
+        .trend-item h2{
+            font-size:26px;
+        }
+
+        .trend-item h3{
+            font-size:20px;
+        }
+
+        .trend-item p,
+        .trend-item ul li,
+        .conclusion p,
+        .conclusion ul li{
+            font-size:16px;
+        }
+
+        .conclusion{
+            padding:35px 28px;
+        }
+
+        .conclusion h2{
+            font-size:30px;
+        }
+
+    }
+</style>
+<style>
+    /* =========================
+    BLOG FAQ SECTION
+    ========================= */
+
+    .blog-faq-section{
+        margin-top:90px;
+    }
+
+    .blog-faq-section h2{
+        font-size:42px;
+        margin-bottom:40px;
+        color:#0f172a;
+        line-height:1.3;
+    }
+
+    .blog-faq-item{
+        background:#ffffff;
+        border:1px solid #e2e8f0;
+        border-radius:24px;
+        padding:30px 35px;
+        margin-bottom:22px;
+        transition:0.3s ease;
+        box-shadow:0 10px 30px rgba(15,23,42,0.04);
+    }
+
+    .blog-faq-item:hover{
+        transform:translateY(-4px);
+        box-shadow:0 18px 40px rgba(15,23,42,0.08);
+    }
+
+    .blog-faq-item h3{
+        font-size:22px;
+        line-height:1.5;
+        margin-bottom:15px;
+        color:#111827;
+    }
+
+    .blog-faq-item p{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+    }
+
+    /* MOBILE */
+    @media(max-width:767px){
+
+        .blog-faq-section{
+            margin-top:70px;
+        }
+
+        .blog-faq-section h2{
+            font-size:30px;
+        }
+
+        .blog-faq-item{
+            padding:24px;
+            border-radius:20px;
+        }
+
+        .blog-faq-item h3{
+            font-size:19px;
+        }
+
+        .blog-faq-item p{
+            font-size:16px;
+        }
+
+    }
+</style>
+
+
+<section class="article-body">
 
     <div class="container">
 
-        <div class="service-detail-wrapper">
-
-            <!-- LEFT CONTENT -->
-            <div class="service-detail-content">
-
-                <!-- Overview -->
-                <div class="service-block">
-
-                    <span class="section-badge">
-                        Overview
-                    </span>
-
-                    <h2 class="section-title">
-                        Future-Ready Infrastructure Consulting Solutions
-                    </h2>
-
-                    <p class="section-description">
-                        Our infrastructure consulting services help businesses optimize cloud environments, improve performance and ensure reliable operations.
-                    </p>
-
-                </div>
-
-                <!-- Key Features -->
-                <div class="service-block">
-
-                    <h3 class="sub-title">
-                        Key Features
-                    </h3>
-
-                    <div class="features-grid">
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Cloud Infrastructure Planning</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Server & Hosting Optimization</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Scalability & Load Planning</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Security & Monitoring Solutions</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Infrastructure Cost Optimization</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Performance Improvement Strategies</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- CTA BOX -->
-                <div class="service-cta-box">
-
-                    <div class="cta-content">
-
-                        <h3>
-                            Optimize your digital infrastructure for growth and stability.
-                        </h3>
-
-                        <p>
-                            Build scalable and user-focused product strategies.
-                        </p>
-
-                    </div>
-
-                    <div class="cta-action">
-                        <a href="http://localhost/shiventech/contact.html" class="btn btn-primary">
-                            Consult Infrastructure Experts
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="service-detail-image">
-
-                <img src="../assets/images/shiventech-startup-consulting.jpg"
-                     alt="Infrastructure Consulting">
-
-            </div>
-
+        <div class="blog-meta">
+            <span>Home</span>
+            <span>></span>
+            <span>Blogs</span>
+            <span>></span>
+            <span>Social Media Marketing Strategies</span>
         </div>
 
-    </div>
+        <h1>Social Media Marketing Strategies</h1>
 
-</section>
+        <div class="blog-meta">
+            <span>📅 12 May 2026</span>
+            <span>•</span>
+            <span>Digital Marketing</span>
+            <span>•</span>
+            <span>7 min read</span>
+        </div>
 
-<!-- FAQ SECTION -->
-<section class="faq-section">
+        <div class="blog-feature-image">
+            <img src="../assets/images/blogs/social-media-marketing-strategies.jpg" alt="Top Web Development Trends in 2026">
+        </div>
+        
+        <p>
+            Social media marketing has become one of the most powerful ways for businesses
+            to connect with their audience, build brand awareness, generate leads,
+            and increase revenue. In 2026, successful brands are focusing on authentic
+            engagement, short-form content, AI-driven personalization, and data-backed strategies
+            to stand out in the highly competitive digital landscape.
+        </p>
 
-    <div class="container">
+        <p>
+            Here are the top social media marketing strategies businesses should adopt in 2026.
+        </p>
 
-        <!-- SECTION HEADER -->
-        <div class="section-header">
+        <hr />
 
-            <span class="section-badge">
-                Frequently Asked Questions
-            </span>
+        <div class="trend-item">
 
-            <h2 class="section-title">
-                Everything You Need To Know
-            </h2>
+            <h2>1. Create Short-Form Video Content</h2>
 
-            <p class="section-description">
-                Find answers to commonly asked questions about our services,
-                technologies and development process.
+            <p>
+                Short-form videos continue to dominate social media platforms because
+                they capture attention quickly and drive higher engagement rates.
+            </p>
+
+            <h3>Popular Content Formats</h3>
+
+            <ul>
+                <li>Instagram Reels</li>
+                <li>YouTube Shorts</li>
+                <li>TikTok-style videos</li>
+                <li>Behind-the-scenes content</li>
+                <li>Quick tutorials and tips</li>
+                <li>Product demonstrations</li>
+            </ul>
+
+            <p>
+                Businesses using engaging video content can improve visibility,
+                audience retention, and conversion rates significantly.
             </p>
 
         </div>
 
-        <!-- FAQ WRAPPER -->
-        <div class="faq-wrapper">
+        <div class="trend-item">
 
-            <!-- WEB DEVELOPMENT FAQ -->
-            <div class="faq-category">
+            <h2>2. Focus on Community Building</h2>
 
-                <h3 class="faq-category-title">
-                    Infrastructure Consulting FAQs
-                </h3>
+            <p>
+                Brands are shifting from simply posting content to building active
+                communities around their products and services.
+            </p>
 
-                <div class="faq-items">
+            <h3>Effective Community Strategies</h3>
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+            <ul>
+                <li>Responding to comments and messages</li>
+                <li>Creating interactive polls and Q&A sessions</li>
+                <li>Running private groups and communities</li>
+                <li>Encouraging user-generated content</li>
+                <li>Hosting live sessions and webinars</li>
+            </ul>
 
-                        <button class="faq-question">
+            <p>
+                Strong online communities improve customer loyalty and increase
+                long-term brand trust.
+            </p>
 
-                            <span>
-                                Do you provide cloud infrastructure consulting?
-                            </span>
+        </div>
 
-                            <span class="faq-icon">+</span>
+        <div class="trend-item">
 
-                        </button>
+            <h2>3. Use AI-Powered Content Personalization</h2>
 
-                        <div class="faq-answer">
+            <p>
+                AI tools are helping marketers deliver highly personalized
+                experiences based on audience interests and behavior.
+            </p>
 
-                            <p>
-                                Yes, we help businesses plan and optimize cloud-based environments.
-                            </p>
+            <h3>Benefits of AI in Social Media Marketing</h3>
 
-                        </div>
+            <ul>
+                <li>Personalized content recommendations</li>
+                <li>Automated audience targeting</li>
+                <li>AI-generated captions and creatives</li>
+                <li>Performance prediction</li>
+                <li>Smart scheduling and automation</li>
+            </ul>
 
-                    </div>
+            <p>
+                Personalized campaigns help improve engagement, click-through rates,
+                and customer satisfaction.
+            </p>
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+        </div>
 
-                        <button class="faq-question">
+        <div class="trend-item">
 
-                            <span>
-                                Can infrastructure consulting improve performance?
-                            </span>
+            <h2>4. Collaborate with Influencers</h2>
 
-                            <span class="faq-icon">+</span>
+            <p>
+                Influencer marketing continues to be a highly effective strategy
+                for increasing reach and credibility.
+            </p>
 
-                        </button>
+            <h3>Why Influencer Marketing Works</h3>
 
-                        <div class="faq-answer">
+            <ul>
+                <li>Builds trust with niche audiences</li>
+                <li>Improves brand awareness</li>
+                <li>Increases engagement rates</li>
+                <li>Generates authentic content</li>
+                <li>Boosts product visibility</li>
+            </ul>
 
-                            <p>
-                                Yes, optimized infrastructure enhances speed, reliability and scalability.
-                            </p>
+            <p>
+                Micro-influencers are especially valuable because they often
+                have stronger engagement and highly targeted audiences.
+            </p>
 
-                        </div>
+        </div>
 
-                    </div>
+        <div class="trend-item">
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+            <h2>5. Optimize Content for Each Platform</h2>
 
-                        <button class="faq-question">
+            <p>
+                Every social media platform has different audience behaviors
+                and content preferences.
+            </p>
 
-                            <span>
-                                Do you help reduce infrastructure costs?
-                            </span>
+            <h3>Platform-Specific Strategies</h3>
 
-                            <span class="faq-icon">+</span>
+            <ul>
+                <li>LinkedIn for professional content and B2B marketing</li>
+                <li>Instagram for visual storytelling and branding</li>
+                <li>Facebook for community engagement</li>
+                <li>YouTube for long-form educational content</li>
+                <li>X (Twitter) for real-time conversations and updates</li>
+            </ul>
 
-                        </button>
+            <p>
+                Tailoring content to each platform improves engagement
+                and campaign performance.
+            </p>
 
-                        <div class="faq-answer">
+        </div>
 
-                            <p>
-                                Yes, we recommend cost-efficient and scalable infrastructure solutions.
-                            </p>
+        <div class="trend-item">
 
-                        </div>
+            <h2>6. Invest in Paid Social Advertising</h2>
 
-                    </div>
+            <p>
+                Organic reach is becoming increasingly competitive, making
+                paid advertising an important part of social media marketing.
+            </p>
 
-                </div>
+            <h3>Effective Ad Strategies</h3>
+
+            <ul>
+                <li>Retargeting website visitors</li>
+                <li>Lookalike audience campaigns</li>
+                <li>Lead generation ads</li>
+                <li>Video advertising</li>
+                <li>Carousel and interactive ads</li>
+            </ul>
+
+            <p>
+                Paid campaigns help businesses reach highly targeted audiences
+                and scale faster.
+            </p>
+
+        </div>
+
+        <div class="trend-item">
+
+            <h2>7. Track Analytics and Performance</h2>
+
+            <p>
+                Data-driven marketing strategies help brands understand
+                what content performs best and where improvements are needed.
+            </p>
+
+            <h3>Important Metrics to Monitor</h3>
+
+            <ul>
+                <li>Engagement rate</li>
+                <li>Reach and impressions</li>
+                <li>Click-through rate (CTR)</li>
+                <li>Follower growth</li>
+                <li>Conversion rate</li>
+                <li>Audience demographics</li>
+            </ul>
+
+            <p>
+                Continuous performance tracking allows businesses to optimize
+                campaigns for better results.
+            </p>
+
+        </div>
+
+        <hr />
+
+        <div class="conclusion">
+
+            <h2>Final Thoughts</h2>
+
+            <p>
+                Social media marketing in 2026 is focused on building meaningful
+                engagement, creating personalized experiences, and delivering
+                high-quality content across multiple platforms.
+            </p>
+
+            <ul>
+                <li>Short-form video content</li>
+                <li>Community-driven engagement</li>
+                <li>AI-powered personalization</li>
+                <li>Influencer collaborations</li>
+                <li>Data-driven marketing decisions</li>
+            </ul>
+
+            <p>
+                Businesses that adapt to changing social media trends can improve
+                customer relationships, strengthen brand identity, and achieve
+                long-term digital growth.
+            </p>
+
+        </div>
+
+        <!-- FAQ SECTION -->
+        <div class="blog-faq-section">
+
+            <h2>FAQs: Social Media Marketing Strategies</h2>
+
+            <div class="blog-faq-item">
+
+                <h3>1. What is the best social media marketing strategy?</h3>
+
+                <p>
+                    The best strategy depends on your business goals, but a combination
+                    of quality content, audience engagement, short-form videos,
+                    and targeted advertising delivers the best results.
+                </p>
+
+            </div>
+
+            <div class="blog-faq-item">
+
+                <h3>2. Why is social media marketing important?</h3>
+
+                <p>
+                    Social media marketing helps businesses build brand awareness,
+                    engage with customers, generate leads, and increase sales
+                    through online platforms.
+                </p>
+
+            </div>
+
+            <div class="blog-faq-item">
+
+                <h3>3. Which platform is best for social media marketing?</h3>
+
+                <p>
+                    The ideal platform depends on your audience and industry.
+                    Instagram and TikTok work well for visual brands,
+                    LinkedIn is effective for B2B businesses,
+                    and Facebook remains strong for community engagement.
+                </p>
+
+            </div>
+
+            <div class="blog-faq-item">
+
+                <h3>4. Is social media marketing good for small businesses?</h3>
+
+                <p>
+                    Yes, social media marketing is highly effective for small businesses
+                    because it provides affordable ways to reach customers,
+                    build trust, and compete with larger brands online.
+                </p>
 
             </div>
 
