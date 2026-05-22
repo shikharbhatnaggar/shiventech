@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiventech - Digital Solutions & Innovation</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Sora:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <style>
         .service-detail-section{
@@ -153,135 +153,242 @@
             }
 
         }
-
-
-        /* FAQ SECTION */
-        .faq-section{
-            padding:100px 20px;
-            background:#ffffff;
-        }
-
-        .section-header{
-            text-align:center;
-            max-width:800px;
-            margin:0 auto 70px;
-        }
-
-        .section-badge{
-            display:inline-block;
-            padding:10px 18px;
-            background:rgba(16,185,129,0.12);
-            color:#10B981;
-            border-radius:50px;
-            font-size:14px;
-            font-weight:600;
-            margin-bottom:20px;
-        }
-
-        .section-title{
-            font-size:48px;
-            color:#0f172a;
-            margin-bottom:20px;
-        }
-
-        .section-description{
-            font-size:18px;
-            line-height:1.8;
-            color:#64748b;
-        }
-
-        .faq-wrapper{
-            max-width:1000px;
-            margin:auto;
-        }
-
-        .faq-category{
-            margin-bottom:50px;
-        }
-
-        .faq-category-title{
-            font-size:32px;
-            margin-bottom:25px;
-            color:#0f172a;
-        }
-
-        .faq-items{
-            display:flex;
-            flex-direction:column;
-            gap:20px;
-        }
-
-        .faq-item{
-            background:#f8fafc;
-            border-radius:20px;
-            overflow:hidden;
-            border:1px solid #e2e8f0;
-            transition:0.3s;
-        }
-
-        .faq-item.active{
-            border-color:#10B981;
-            box-shadow:0 10px 30px rgba(16,185,129,0.12);
-        }
-
-        .faq-question{
-            width:100%;
-            padding:25px 30px;
-            background:none;
-            border:none;
-            outline:none;
-            cursor:pointer;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            font-size:18px;
-            font-weight:600;
-            color:#0f172a;
-            text-align:left;
-        }
-
-        .faq-icon{
-            font-size:28px;
-            color:#10B981;
-            min-width:30px;
-            text-align:center;
-        }
-
-        .faq-answer{
-            padding:0 30px 25px;
-            display:none;
-        }
-
-        .faq-item.active .faq-answer{
-            display:block;
-        }
-
-        .faq-answer p{
-            font-size:16px;
-            line-height:1.8;
-            color:#64748b;
-        }
-
-        /* RESPONSIVE */
-        @media(max-width:768px){
-
-            .section-title{
-                font-size:34px;
-            }
-
-            .faq-category-title{
-                font-size:26px;
-            }
-
-            .faq-question{
-                font-size:16px;
-                padding:22px;
-            }
-
-        }
     </style>
 
-    
+    <style>
+    /* =========================
+    BLOG PAGE STYLING
+    ========================= */
+
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
+
+    .container{
+        max-width:900px;
+        margin:auto;
+    }
+
+    /* BLOG SECTION ONLY */
+    .article-body{
+        padding:120px 20px 100px;
+        background:#f8fafc;
+    }
+
+    .article-body .container{
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    /* BLOG HERO */
+    .article-body h1{
+        font-size:56px;
+        line-height:1.15;
+        font-weight:800;
+        color:#0f172a;
+        margin-bottom:25px;
+        letter-spacing:-1px;
+    }
+
+    .article-body > .container > p:first-of-type{
+        font-size:21px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:25px;
+    }
+
+    .article-body > .container > p:nth-of-type(2){
+        font-size:18px;
+        color:#64748b;
+        margin-bottom:50px;
+    }
+
+    /* ARTICLE DIVIDER */
+    .article-body hr{
+        border:none;
+        height:1px;
+        background:#e2e8f0;
+        margin:60px 0;
+    }
+
+    /* TREND BLOCKS */
+    .trend-item{
+        background:#ffffff;
+        padding:45px;
+        border-radius:28px;
+        margin-bottom:35px;
+        box-shadow:
+            0 10px 40px rgba(15,23,42,0.05);
+        border:1px solid #edf2f7;
+        transition:0.35s ease;
+    }
+
+    .trend-item:hover{
+        transform:translateY(-6px);
+        box-shadow:
+            0 20px 60px rgba(15,23,42,0.08);
+    }
+
+    .trend-item h2{
+        font-size:34px;
+        line-height:1.3;
+        margin-bottom:22px;
+        color:#0f172a;
+        font-weight:700;
+    }
+
+    .trend-item h3{
+        font-size:22px;
+        margin-top:35px;
+        margin-bottom:18px;
+        color:#111827;
+        font-weight:600;
+    }
+
+    .trend-item p{
+        font-size:18px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:18px;
+    }
+
+    /* LISTS */
+    .trend-item ul{
+        padding-left:22px;
+        margin-bottom:20px;
+    }
+
+    .trend-item ul li{
+        font-size:17px;
+        line-height:1.9;
+        color:#475569;
+        margin-bottom:10px;
+        position:relative;
+    }
+
+    /* CONCLUSION */
+    .conclusion{
+        background:linear-gradient(135deg,#0f172a,#111827);
+        padding:60px;
+        border-radius:32px;
+        margin-top:80px;
+        color:#ffffff;
+    }
+
+    .conclusion h2{
+        font-size:40px;
+        margin-bottom:25px;
+        color:#ffffff;
+    }
+
+    .conclusion p{
+        font-size:18px;
+        line-height:1.9;
+        color:rgba(255,255,255,0.85);
+        margin-bottom:20px;
+    }
+
+    .conclusion ul{
+        margin:30px 0;
+        padding-left:22px;
+    }
+
+    .conclusion ul li{
+        font-size:18px;
+        line-height:1.9;
+        margin-bottom:10px;
+        color:rgba(255,255,255,0.9);
+    }
+
+    .blog-meta{
+        display:flex;
+        gap:14px;
+        flex-wrap:wrap;
+        align-items:center;
+        color:#64748b;
+        font-size:15px;
+        margin-bottom:40px;
+    }
+
+    .blog-feature-image{
+        margin-bottom:60px;
+    }
+
+    .blog-feature-image img{
+        width:100%;
+        border-radius:28px;
+        display:block;
+        box-shadow:0 20px 60px rgba(0,0,0,0.08);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:991px){
+
+        .article-body h1{
+            font-size:46px;
+        }
+
+        .trend-item{
+            padding:35px;
+        }
+
+        .trend-item h2{
+            font-size:30px;
+        }
+
+        .conclusion{
+            padding:45px;
+        }
+
+    }
+
+    @media(max-width:767px){
+
+        .article-body{
+            padding:100px 15px 80px;
+        }
+
+        .article-body h1{
+            font-size:36px;
+        }
+
+        .article-body > .container > p:first-of-type{
+            font-size:18px;
+        }
+
+        .trend-item{
+            padding:28px;
+            border-radius:22px;
+        }
+
+        .trend-item h2{
+            font-size:26px;
+        }
+
+        .trend-item h3{
+            font-size:20px;
+        }
+
+        .trend-item p,
+        .trend-item ul li,
+        .conclusion p,
+        .conclusion ul li{
+            font-size:16px;
+        }
+
+        .conclusion{
+            padding:35px 28px;
+        }
+
+        .conclusion h2{
+            font-size:30px;
+        }
+
+    }
+</style>
+
     <style>
         /* =========================
         FOOTER 5 COLUMN LAYOUT
@@ -381,7 +488,7 @@
         <div class="navbar-container">
             <div class="navbar-left">
                 <div class="logo">
-                    <span class="logo-icon"><a href="http://localhost/shiventech/"><img src="../assets/images/shiventech-logo.png" width="30%"></a></span>
+                    <span class="logo-icon"><a href="http://localhost/shiventech/"><img src="assets/images/shiventech-logo.png" width="30%"></a></span>
                     <!-- <span class="logo-text"><img src="../assets/images/shiventech-logo.png" width="30%"></span> -->
                 </div>
             </div>
@@ -617,231 +724,138 @@
 
 <!-- INCLUDE SAME NAVBAR HERE -->
 
-<section class="inner-hero">
+<!-- <section class="inner-hero">
     <div class="inner-hero-content">
-        <span class="hero-badge">SEO Optimization</span>
-        <h1>Improve Your Search Engine Visibility</h1>
+        <span class="hero-badge">Progressive Web Apps</span>
+        <h1>App-Like Experiences Directly From The Browser</h1>
         <p>
-            Boost your rankings and drive organic traffic with result-oriented SEO strategies.
+            Deliver fast, engaging and reliable web experiences using modern Progressive Web App technologies.
         </p>
     </div>
-</section>
+</section> -->
 
-<section class="service-detail-section">
+<section class="article-body">
 
     <div class="container">
 
-        <div class="service-detail-wrapper">
+        <h1>Privacy Policy</h1>
 
-            <!-- LEFT CONTENT -->
-            <div class="service-detail-content">
+        <div class="blog-meta">
+            <span>Last Updated: May 2026</span>
+        </div>
 
-                <!-- Overview -->
-                <div class="service-block">
+        <p>
+            Shiventech Solutions (P) Ltd values your privacy and is committed
+            to protecting your personal information. This Privacy Policy explains
+            how we collect, use, and safeguard your information.
+        </p>
 
-                    <span class="section-badge">
-                        Overview
-                    </span>
+        <hr />
 
-                    <h2 class="section-title">
-                        Grow Organically With Smart SEO
-                    </h2>
+        <div class="trend-item">
 
-                    <p class="section-description">
-                        We optimize your digital presence using technical SEO, content strategy and performance improvements.
-                    </p>
+            <h2>1. Information We Collect</h2>
 
-                </div>
-
-                <!-- Key Features -->
-                <div class="service-block">
-
-                    <h3 class="sub-title">
-                        Key Features
-                    </h3>
-
-                    <div class="features-grid">
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Technical SEO Audits</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Keyword Optimization</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>On-Page SEO</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Link Building Strategies</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Performance Optimization</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Search Visibility Improvements</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- CTA BOX -->
-                <div class="service-cta-box">
-
-                    <div class="cta-content">
-
-                        <h3>
-                            Rank Higher & Grow Faster
-                        </h3>
-
-                        <p>
-                            Increase your online visibility with effective SEO.
-                        </p>
-
-                    </div>
-
-                    <div class="cta-action">
-                        <a href="http://localhost/shiventech/contact.html" class="btn btn-primary">
-                            Improve Rankings
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- RIGHT IMAGE -->
-            <div class="service-detail-image">
-
-                <img src="../assets/images/digital-marketing.png"
-                     alt="SEO Optimization">
-
-            </div>
+            <ul>
+                <li>Name and contact information</li>
+                <li>Email address and phone number</li>
+                <li>Project and business details shared with us</li>
+                <li>Website usage and analytics data</li>
+                <li>Communication and inquiry records</li>
+            </ul>
 
         </div>
 
-    </div>
+        <div class="trend-item">
 
-</section>
+            <h2>2. How We Use Your Information</h2>
 
-<!-- FAQ SECTION -->
-<section class="faq-section">
+            <ul>
+                <li>Provide and improve our services</li>
+                <li>Respond to inquiries and support requests</li>
+                <li>Communicate project updates</li>
+                <li>Enhance website performance and security</li>
+                <li>Send relevant business updates and marketing communications</li>
+            </ul>
 
-    <div class="container">
+        </div>
 
-        <!-- SECTION HEADER -->
-        <div class="section-header">
+        <div class="trend-item">
 
-            <span class="section-badge">
-                Frequently Asked Questions
-            </span>
+            <h2>3. Data Protection</h2>
 
-            <h2 class="section-title">
-                Everything You Need To Know
-            </h2>
-
-            <p class="section-description">
-                Find answers to commonly asked questions about our services,
-                technologies and development process.
+            <p>
+                We implement appropriate security measures to protect
+                your personal data against unauthorized access,
+                disclosure, or misuse.
             </p>
 
         </div>
 
-        <!-- FAQ WRAPPER -->
-        <div class="faq-wrapper">
+        <div class="trend-item">
 
-            <!-- WEB DEVELOPMENT FAQ -->
-            <div class="faq-category">
+            <h2>4. Third-Party Services</h2>
 
-                <h3 class="faq-category-title">
-                    SEO Optimization FAQs
-                </h3>
+            <p>
+                We may use trusted third-party services such as analytics,
+                hosting providers, and communication tools to operate our business.
+            </p>
 
-                <div class="faq-items">
+            <p>
+                These providers may process data according to their own privacy policies.
+            </p>
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item active">
+        </div>
 
-                        <button class="faq-question">
+        <div class="trend-item">
 
-                            <span>
-                                How long does SEO take?
-                            </span>
+            <h2>5. Cookies and Tracking</h2>
 
-                            <span class="faq-icon">−</span>
+            <p>
+                Our website may use cookies and tracking technologies
+                to improve user experience, analyze traffic,
+                and optimize performance.
+            </p>
 
-                        </button>
+        </div>
 
-                        <div class="faq-answer">
+        <div class="trend-item">
 
-                            <p>
-                                SEO results typically take several weeks to months depending on competition.
-                            </p>
+            <h2>6. Your Rights</h2>
 
-                        </div>
+            <ul>
+                <li>Request access to your data</li>
+                <li>Request corrections to inaccurate information</li>
+                <li>Request deletion of your data</li>
+                <li>Opt out of marketing communications</li>
+            </ul>
 
-                    </div>
+        </div>
 
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
+        <div class="trend-item">
 
-                        <button class="faq-question">
+            <h2>7. Policy Updates</h2>
 
-                            <span>
-                                Do you provide technical SEO?
-                            </span>
+            <p>
+                We may update this Privacy Policy periodically.
+                Changes will be reflected on this page with an updated date.
+            </p>
 
-                            <span class="faq-icon">+</span>
+        </div>
 
-                        </button>
+        <div class="conclusion">
 
-                        <div class="faq-answer">
+            <h2>Contact Us</h2>
 
-                            <p>
-                                Yes, we perform technical SEO audits and optimization.
-                            </p>
+            <p>
+                For privacy-related questions or requests,
+                please contact us:
+            </p>
 
-                        </div>
-
-                    </div>
-
-                    <!-- FAQ ITEM -->
-                    <div class="faq-item">
-
-                        <button class="faq-question">
-
-                            <span>
-                                Can SEO improve website traffic?
-                            </span>
-
-                            <span class="faq-icon">+</span>
-
-                        </button>
-
-                        <div class="faq-answer">
-
-                            <p>
-                                Yes, effective SEO strategies improve visibility and organic traffic.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <ul>
+                <li>Email: connect@shiventech.co.in</li>
+                <li>Phone: +91 90393 03301</li>
+            </ul>
 
         </div>
 
@@ -862,7 +876,7 @@
 
                 <div class="footer-logo">
                     <span class="logo-icon">
-                        <img src="../assets/images/shiventech-logo-w.png" width="60%">
+                        <img src="assets/images/shiventech-logo-w.png" width="60%">
                     </span>
                 </div>
 
@@ -1018,8 +1032,8 @@
 
                 <ul class="footer-links">
                     <li><a href="http://localhost/shiventech/terms-of-service.html">Terms of Service</a></li>
-<li><a href="http://localhost/shiventech/privacy-policy.html">Privacy Policy</a></li>
-<li><a href="http://localhost/shiventech/cookie-policy.html">Cookie Policy</a></li>
+                    <li><a href="http://localhost/shiventech/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="http://localhost/shiventech/cookie-policy.html">Cookie Policy</a></li>
                 </ul>
 
             </div>
@@ -1039,7 +1053,7 @@
 
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         // FAQ ACCORDION
