@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Submenu links
-    const submenuLinks = document.querySelectorAll('.submenu-category ul li a');
+    /*const submenuLinks = document.querySelectorAll('.submenu-category ul li a');
     submenuLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -64,7 +64,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Could navigate to a services detail page
             alert('Service: ' + this.textContent);
         });
+    });*/
+
+    const submenuLinks = document.querySelectorAll('.submenu-category ul li a');
+    submenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            closeMobileMenu();
+        });
     });
+
 
     // ==================== CLOSE MENU WHEN CLICKING OUTSIDE ====================
     document.addEventListener('click', function(e) {
