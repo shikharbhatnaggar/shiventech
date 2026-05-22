@@ -432,12 +432,12 @@ serviceLinks.forEach(link => {
 // ==================== BLOG READ MORE LINKS ==================== 
 const readMoreLinks = document.querySelectorAll('.read-more');
 
-readMoreLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        alert('Full article would load here. This is a demo website.');
-    });
-});
+// readMoreLinks.forEach(link => {
+//     link.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         alert('Full article would load here. This is a demo website.');
+//     });
+// });
 
 // ==================== NEWSLETTER SIGNUP (if added later) ==================== 
 function setupNewsletter() {
